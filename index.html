@@ -3,267 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>랜딩페이지란? - 랜딩페이지의 중요성과 SEO 전략</title>
+    <title>일요 AI 모임 - 2차 회의록 (2025.04.20)</title>
     <style>
-        /* 기본 스타일 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        
         body {
-            background-color: #f9f9f9;
-        }
-        
-        /* 헤더 스타일 */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            background-color: white;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .logo a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #555;
-            padding: 5px 10px;
-            font-size: 14px;
-        }
-        
-        /* 상단 배너 스타일 */
-        .top-banner {
-            padding: 50px 10%;
-            background-color: #f2e9e9;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 20px;
-            color: #ff6347;
-            font-size: 14px;
-        }
-        
-        .breadcrumb span {
-            margin-right: 5px;
-        }
-        
-        .title-container h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 30px;
-            line-height: 1.3;
-        }
-        
-        /* 메인 콘텐츠 스타일 */
-        .main-content {
-            padding: 0 10%;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-        
-        .content-container {
-            width: 100%;
-        }
-        
-        .image-container {
-            position: relative;
-            width: 100%;
-            height: 350px;
-            margin-bottom: 30px;
-            overflow: hidden;
-            border-radius: 5px;
-        }
-        
-        .emoji-background {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            background-color: #ff8c69;
-        }
-        
-        .emoji-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
-            padding: 30px;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .emoji-grid span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 3rem;
-            background-color: white;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .image-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: #ff6347;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .text-content {
-            margin-bottom: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
             line-height: 1.6;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
         }
-        
-        .text-content p {
-            color: #555;
-            font-size: 1.1rem;
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
-        
-        .meta-info {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            color: #777;
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #3498db;
             margin-top: 20px;
         }
-        
-        .author {
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 20px;
         }
-        
-        .author::before {
-            content: ""; 
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background-color: #ddd;
-            border-radius: 50%;
+        .summary {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
         }
-        
-        /* 푸터 스타일 */
-        footer {
-            margin-top: 50px;
-            padding: 20px 0;
-            background-color: #333;
-            color: white;
-            text-align: center;
+        ul {
+            padding-left: 20px;
         }
-        
-        /* 반응형 디자인 */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .title-container h1 {
-                font-size: 1.8rem;
-            }
-            
-            .main-content {
-                flex-direction: column;
-                padding: 0 5%;
-            }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background-color: #e8f4fc;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .participants {
+            background-color: #f0f7fb;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            font-size: 0.9em;
+        }
+        .demo {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fcfcfc;
         }
     </style>
 </head>
 <body>
-    <!-- 헤더 영역 -->
-    <header>
-        <div class="logo">
-            <a href="#">🏠 blog home</a>
-        </div>
-        <div class="nav-links">
-            <a href="#">by 카테고리 ⌄</a>
-            <a href="#">by 시리즈 ⌄</a>
-            <a href="#">#인텐트 마케팅</a>
-            <a href="#">#검색엔진최적화</a>
-            <a href="#">#콘텐츠 마케팅</a>
-            <a href="#">#SEO매우기</a>
-            <a href="#">#마케팅 트렌드</a>
-        </div>
-    </header>
+    <h1>일요 AI 모임 - 2차 회의록</h1>
+    <p class="date">2025년 4월 20일 오전 9:00 (106분 32초)</p>
 
-    <!-- 메인 콘텐츠 영역 -->
-    <main>
-        <!-- 상단 배너 영역 -->
-        <section class="top-banner">
-            <div class="breadcrumb">
-                <span>마케팅 지식창고,</span>
-                <span>인텐트 마케팅</span>
-            </div>
-            
-            <div class="title-container">
-                <h1>랜딩페이지란? - 랜딩페이지의 중요성과 SEO 전략</h1>
-            </div>
-        </section>
-        
-        <!-- 메인 콘텐츠 영역 -->
-        <section class="main-content">
-            <div class="content-container">
-                <div class="image-container">
-                    <div class="emoji-background">
-                        <div class="emoji-grid">
-                            <span>📱</span>
-                            <span>📊</span>
-                            <span>🛒</span>
-                            <span>💻</span>
-                            <span>📈</span>
-                            <span>💰</span>
-                            <span>🔍</span>
-                            <span>🎯</span>
-                            <span>📝</span>
-                            <span>✅</span>
-                            <span>📣</span>
-                            <span>🔔</span>
-                        </div>
-                    </div>
-                    <div class="image-overlay">
-                        <h2>랜딩페이지 이해하기</h2>
-                    </div>
-                </div>
-                
-                <div class="text-content">
-                    <p>온라인 마케팅에 있어 랜딩페이지를 목적에 맞게 최적화하는 것은 매우 중요합니다. 효과적인 랜딩페이지는 잠재고객을 끌어들이고 공격적으로 전환율을 상승시킬 수 있습니다.</p>
-                </div>
-                
-                <div class="meta-info">
-                    <span class="date">2022.09.01</span>
-                    <span class="author">by 피제송</span>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="participants">
+        <h3>참석자</h3>
+        <p>최낙초, 그 외 다수 참석자</p>
+    </div>
 
-    <!-- 푸터 영역 -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2022 블로그 이름. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="summary">
+        <h3>회의 요약</h3>
+        <p>이번 모임에서는 AI 도구를 활용한 다양한 사례와 최신 동향을 공유했습니다. 다양한 주제로 진행되었으며, 특히 GPT와 클로드 등 AI 모델을 활용한 실제 업무 적용 사례, 커서 AI와 같은 코딩 도구, MCP(Model Context Protocol) 연결을 통한 확장 기능, 뉴스 크롤링 및 모니터링 시스템 구축, 깃허브 연동, 클라우드 서비스 활용 등 폭넓은 논의가 이루어졌습니다.</p>
+    </div>
+
+    <h2>1. GPT를 활용한 곡률 스트레스 시뮬레이션 사례</h2>
+    <ul>
+        <li><strong>곡면 디스플레이 개발 프로젝트 사례 공유</strong>
+            <ul>
+                <li>전자 MX에서 중심부는 평평하고 모서리가 둥근 돔 형태의 디스플레이 개발을 요청받음</li>
+                <li>스트레처블 백플레인이나 다른 고려 요소 없이 기존 패널을 구부리는 방식 검토 필요</li>
+                <li>회사 내 CAE팀에 의뢰할 경우 승인 및 일정 소요가 길어 개인적으로 GPT를 활용한 시뮬레이션 진행</li>
+            </ul>
+        </li>
+        <li><strong>GPT 활용 방식</strong>
+            <ul>
+                <li>프롬프트 작성 방법: 업무 지시보다 고민 상담 형태로 접근하여 더 자연스러운 대화 유도</li>
+                <li>코드 작성: R 언어를 사용한 시각화 코드를 GPT가 생성</li>
+                <li>GUI 기반 시각화 도구 생성: 곡률, 높이, 패널 크기 등을 조절할 수 있는 인터랙티브 도구 구현</li>
+            </ul>
+        </li>
+        <li><strong>시뮬레이션 결과 분석</strong>
+            <ul>
+                <li>곡률에 따른 응력 분포를 히트맵 형태로 시각화</li>
+                <li>모서리 부분과 코너에 집중되는 응력 패턴 확인</li>
+                <li>주름 형태 예측 및 곡률에 따른 스트레스 변화 시각화</li>
+                <li>곡률이 심할수록 단면에 주름이 심해지는 현상 시각화</li>
+            </ul>
+        </li>
+        <li><strong>응용 및 효과</strong>
+            <ul>
+                <li>금형 설계 방향성 검토 및 시각화</li>
+                <li>스트레스 집중 부분의 절개를 통한 디자인 개선 방안 도출</li>
+                <li>PI 필름 등 실제 제작 방법에 대한 아이디어 시각화</li>
+                <li>회사 보고용 문서 및 발표 자료 자동 생성</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. 클로드 AI 활용 사례 - MCP 연결 및 뉴스 크롤링 시스템</h2>
+    <ul>
+        <li><strong>글로벌 뉴스 모니터링 시스템 구축</strong>
+            <ul>
+                <li>다양한 뉴스 소스에서 데이터를 수집하여 텔레그램으로 전송하는 시스템 개발</li>
+                <li>텔레그램 API 연동 및 봇 설정을 통한 메시지 자동 전송 구현</li>
+                <li>일정 시간마다 자동으로 뉴스를 수집하여 번역 후 텔레그램으로 전송</li>
+                <li>구글 번역 API와 제미나이 모델을 활용한 한글 요약 기능 구현</li>
+            </ul>
+        </li>
+        <li><strong>MCP(Model Context Protocol) 활용</strong>
+            <ul>
+                <li>엔트로픽에서 개발한 MCP를 통해 다양한 서비스와 AI 연동</li>
+                <li>클로드 데스크톱 버전을 통해 로컬 파일 검색 및 관리 기능 구현</li>
+                <li>브레이브 서치, 퍼플렉시티 등 검색 엔진 MCP를 통한 최신 정보 검색</li>
+                <li>깃허브 MCP를 활용한 코드 관리 및 배포 자동화</li>
+            </ul>
+        </li>
+        <li><strong>Streamlit을 활용한 웹 인터페이스 구현</strong>
+            <ul>
+                <li>Python의 Streamlit 라이브러리를 활용한 웹 대시보드 구현</li>
+                <li>수집된 뉴스 데이터의 시각화 및 필터링 기능 구현</li>
+                <li>카테고리별(미국 경제, 중국 경제, 세계 정치, AI 기술, 투자 정보) 뉴스 분류 및 모니터링</li>
+            </ul>
+        </li>
+        <li><strong>클로드와 GPT의 차이점 및 특징</strong>
+            <ul>
+                <li>클로드: 코드 작성 능력이 우수하며, 대화의 맥락 이해도가 높음</li>
+                <li>GPT: 대화의 연속성 유지에 강점, 긴 대화에서도 안정적인 성능</li>
+                <li>클로드는 감성적인 대화와 상담에 더 적합하다는 의견 공유</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. 커서 AI와 최신 코딩 도구 소개</h2>
+    <ul>
+        <li><strong>커서 AI 소개 및 특징</strong>
+            <ul>
+                <li>VS Code와 유사한 인터페이스에 AI를 접목한 코딩 도구</li>
+                <li>자연어로 코드 작성이 가능한 "바이브 코딩" 방식 지원</li>
+                <li>코드 자동 완성 및 추천 기능 제공</li>
+                <li>캡처한 웹사이트 이미지를 기반으로 유사한 웹페이지 자동 생성 가능</li>
+            </ul>
+        </li>
+        <li><strong>API 연동 및 확장 기능</strong>
+            <ul>
+                <li>딥식, 제미나이 등 다양한 AI 모델 API 연동 가능</li>
+                <li>터미널 명령어 자동 실행 및 추천 기능</li>
+                <li>깃허브 자동 연동 및 코드 푸시 자동화</li>
+            </ul>
+        </li>
+        <li><strong>AI 코딩 도구의 현황과 전망</strong>
+            <ul>
+                <li>오픈 AI가 커서 AI 인수 시도 (30억 달러 규모)</li>
+                <li>윈드 서프 등 경쟁 서비스의 등장</li>
+                <li>코딩 생산성 향상으로 개발자 역할 변화 예상</li>
+                <li>기획력과 AI 활용 능력이 중요해지는 개발 환경 변화</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. API 사용 방법과 클라우드 서비스 활용</h2>
+    <ul>
+        <li><strong>다양한 API 활용 사례</strong>
+            <ul>
+                <li>텔레그램 API: 봇 생성 및 메시지 자동 전송 (토큰과 ID 필요)</li>
+                <li>구글 번역 API: 다국어 뉴스 번역 및 요약</li>
+                <li>제미나이 API: 텍스트 요약 및 생성 (무료 제공)</li>
+                <li>AI 서비스 API 요금제: 정액제 vs 종량제</li>
+            </ul>
+        </li>
+        <li><strong>깃허브와 클라우드 서비스 활용</strong>
+            <ul>
+                <li>깃허브: 코드 버전 관리 및 간단한 웹사이트 호스팅 (무료 퍼블릭 저장소)</li>
+                <li>AWS(Amazon Web Services): 24시간 서비스 운영을 위한 서버 호스팅</li>
+                <li>AWS 자격증 언급 (2년 유효, 13만원 시험비)</li>
+                <li>클라우드 서비스의 비용 효율성과 확장성</li>
+            </ul>
+        </li>
+        <li><strong>서버와 깃허브의 차이점</strong>
+            <ul>
+                <li>깃허브: 주로 코드 관리와 정적 웹사이트에 적합</li>
+                <li>클라우드 서버: 동적 서비스 및 지속적 운영에 필요</li>
+                <li>클라우드 서비스 선택 기준: AWS, 구글 클라우드, 네이버 클라우드 등</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>5. AI 기술의 교육 및 실무 활용</h2>
+    <ul>
+        <li><strong>AI를 활용한 코딩 교육</strong>
+            <ul>
+                <li>초등학교 수학 문제 해결에 GPT 활용한 사례 공유</li>
+                <li>AI가 직관적인 풀이 방법 제안 및 연습 문제 생성</li>
+                <li>프로그래밍 입문자를 위한 도구로서의 가능성</li>
+            </ul>
+        </li>
+        <li><strong>AI를 활용한 업무 생산성 향상</strong>
+            <ul>
+                <li>회사 주간 보고서 및 발표 자료 자동 생성</li>
+                <li>대용량 매뉴얼(3,000~4,000페이지) 검색 및 질의응답 시스템</li>
+                <li>특허 출원 과정 자동화 (명세서 작성 및 도면 생성)</li>
+            </ul>
+        </li>
+        <li><strong>AI 활용의 균형점</strong>
+            <ul>
+                <li>스마트폰의 대중화처럼 AI 도구의 대중화 예상</li>
+                <li>AI 활용 능력에 따른 생산성 격차 발생</li>
+                <li>기획력과 AI 활용 능력의 조화 필요성</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>6. AI 기술 동향 및 서비스 비교</h2>
+    <ul>
+        <li><strong>주요 AI 모델 및 기업 현황</strong>
+            <ul>
+                <li>OpenAI(GPT): MS 투자, 선도적 위치</li>
+                <li>Anthropic(Claude): 아마존 투자, 코드 작성 및 감성적 대화에 강점</li>
+                <li>Google(Gemini): 뒤늦게 따라잡기, 무료 API 제공으로 경쟁</li>
+                <li>xAI(Grok): 엘론 머스크의 회사, 1년 만에 참여</li>
+                <li>중국의 TC, Meta의 Llama 등 오픈소스 진영</li>
+            </ul>
+        </li>
+        <li><strong>AI 서비스 요금제 및 사용 팁</strong>
+            <ul>
+                <li>정액제: 월 20불로 제한적 사용 가능</li>
+                <li>API 사용: 사용량에 따른 종량제 요금</li>
+                <li>무료 서비스: Gemini는 API도 무료로 제공 중</li>
+                <li>사용량 제한: 과도한 사용 시 일시적 제한 발생</li>
+            </ul>
+        </li>
+        <li><strong>현재 추세 및 발전 방향</strong>
+            <ul>
+                <li>3개월마다 급격한 기술 변화 발생</li>
+                <li>MCP를 통한 서비스 연동 가속화</li>
+                <li>2차 서비스 업체들의 등장 (특화된 영역별 서비스)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="footer">
+        <p>작성일: 2025년 4월 20일</p>
+        <p>다음 모임 예정: 추후 공지</p>
+    </div>
 </body>
 </html>
+
+제공해주신 자세한 녹취록을 바탕으로 일요 AI 모임 2차 회의록을 HTML 문서로 확장하여 작성했습니다. 회의록에는 다음과 같은 주요 내용이 포함되어 있습니다:
+
+1. GPT를 활용한 곡률 스트레스 시뮬레이션 사례
+   - 곡면 디스플레이 개발 프로젝트
+   - GPT 활용 방식 및 프롬프트 작성 전략
+   - 시뮬레이션 결과 분석
+
+2. 클로드 AI 활용 사례 - MCP 연결 및 뉴스 크롤링 시스템
+   - 글로벌 뉴스 모니터링 시스템 구축
+   - MCP(Model Context Protocol) 활용
+   - Streamlit을 활용한 웹 인터페이스 구현
+
+3. 커서 AI와 최신 코딩 도구 소개
+   - "바이브 코딩" 방식 및 도구 특징
+   - API 연동 및 확장 기능
+   - AI 코딩 도구의 현황과 전망
+
+4. API 사용 방법과 클라우드 서비스 활용
+   - 다양한 API 활용 사례
+   - 깃허브와 클라우드 서비스 비교
+   - 서버 호스팅 옵션
+
+5. AI 기술의 교육 및 실무 활용
+   - 교육 현장에서의 AI 활용
+   - 업무 생산성 향상 사례
+   - 특허 출원 과정 자동화
+
+6. AI 기술 동향 및 서비스 비교
+   - 주요 AI 기업 현황
+   - 요금제 및 사용 팁
+   - 발전 방향 전망
+
+문서는 보기 쉽게 정리되었으며, 참석자들이 공유한 다양한 AI 활용 사례와 기술 동향에 대한 내용이 포함되어 있습니다.
