@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜딩페이지란? - 랜딩페이지의 중요성과 SEO 전략</title>
+    <style>
+        /* 기본 스타일 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+        }
+        
+        /* 헤더 스타일 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        
+        /* 상단 배너 스타일 */
+        .top-banner {
+            padding: 50px 10%;
+            background-color: #f2e9e9;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 20px;
+            color: #ff6347;
+            font-size: 14px;
+        }
+        
+        .breadcrumb span {
+            margin-right: 5px;
+        }
+        
+        .title-container h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+        
+        /* 메인 콘텐츠 스타일 */
+        .main-content {
+            padding: 0 10%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .content-container {
+            width: 100%;
+        }
+        
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        
+        .emoji-background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #ff8c69;
+        }
+        
+        .emoji-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .emoji-grid span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .text-content {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .text-content p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        .meta-info {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: #777;
+            margin-top: 20px;
+        }
+        
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .author::before {
+            content: ""; 
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+        
+        /* 푸터 스타일 */
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .title-container h1 {
+                font-size: 1.8rem;
+            }
+            
+            .main-content {
+                flex-direction: column;
+                padding: 0 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <div class="logo">
+            <a href="#">🏠 blog home</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">by 카테고리 ⌄</a>
+            <a href="#">by 시리즈 ⌄</a>
+            <a href="#">#인텐트 마케팅</a>
+            <a href="#">#검색엔진최적화</a>
+            <a href="#">#콘텐츠 마케팅</a>
+            <a href="#">#SEO매우기</a>
+            <a href="#">#마케팅 트렌드</a>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main>
+        <!-- 상단 배너 영역 -->
+        <section class="top-banner">
+            <div class="breadcrumb">
+                <span>마케팅 지식창고,</span>
+                <span>인텐트 마케팅</span>
+            </div>
+            
+            <div class="title-container">
+                <h1>랜딩페이지란? - 랜딩페이지의 중요성과 SEO 전략</h1>
+            </div>
+        </section>
+        
+        <!-- 메인 콘텐츠 영역 -->
+        <section class="main-content">
+            <div class="content-container">
+                <div class="image-container">
+                    <div class="emoji-background">
+                        <div class="emoji-grid">
+                            <span>📱</span>
+                            <span>📊</span>
+                            <span>🛒</span>
+                            <span>💻</span>
+                            <span>📈</span>
+                            <span>💰</span>
+                            <span>🔍</span>
+                            <span>🎯</span>
+                            <span>📝</span>
+                            <span>✅</span>
+                            <span>📣</span>
+                            <span>🔔</span>
+                        </div>
+                    </div>
+                    <div class="image-overlay">
+                        <h2>랜딩페이지 이해하기</h2>
+                    </div>
+                </div>
+                
+                <div class="text-content">
+                    <p>온라인 마케팅에 있어 랜딩페이지를 목적에 맞게 최적화하는 것은 매우 중요합니다. 효과적인 랜딩페이지는 잠재고객을 끌어들이고 공격적으로 전환율을 상승시킬 수 있습니다.</p>
+                </div>
+                
+                <div class="meta-info">
+                    <span class="date">2022.09.01</span>
+                    <span class="author">by 피제송</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2022 블로그 이름. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
